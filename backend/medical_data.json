@@ -1,0 +1,41 @@
+{
+  "version": "2026.1.0",
+  "last_updated": "2026-03-20",
+  "protocols": {
+    "cardiac_arrest": {
+      "id": "PROT_001",
+      "criticality": "HIGH",
+      "voice_triggers": ["not breathing", "heart attack", "no pulse", "collapsed"],
+      "metronome_bpm": 110,
+      "steps": [
+        "Check scene safety. Verify the patient is on a firm, flat surface.",
+        "Check responsiveness: Shout and tap shoulders.",
+        "If no response, call 911 immediately (triggering auto-dialer).",
+        "Start chest compressions: Push hard and fast in the center of the chest.",
+        "Follow the on-screen rhythmic pulse for timing."
+      ]
+    },
+    "choking": {
+      "id": "PROT_002",
+      "criticality": "HIGH",
+      "voice_triggers": ["choking", "cannot breathe", "food stuck", "turning blue"],
+      "steps": [
+        "Ask 'Are you choking?'. If they nod, stand behind them.",
+        "Give 5 back blows between the shoulder blades with the heel of your hand.",
+        "Give 5 abdominal thrusts (Heimlich Maneuver).",
+        "Repeat 5-and-5 until the object is forced out or patient becomes unresponsive."
+      ]
+    },
+    "opioid_overdose": {
+      "id": "PROT_003",
+      "criticality": "HIGH",
+      "voice_triggers": ["overdose", "passed out", "blue lips", "took too much"],
+      "steps": [
+        "Check for responsiveness and breathing.",
+        "Administer Naloxone (Narcan) nasal spray if available.",
+        "If patient is not breathing, start rescue breaths or CPR.",
+        "Wait 2-3 minutes; if no response, give a second dose of Naloxone."
+      ]
+    }
+  }
+}

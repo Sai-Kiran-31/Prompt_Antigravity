@@ -1,0 +1,35 @@
+# Environment files (API keys, secrets)
+.env
+*.env.local
+
+# Flutter
+aegis_copilot/.dart_tool/
+aegis_copilot/.packages
+aegis_copilot/build/
+aegis_copilot/.flutter-plugins
+aegis_copilot/.flutter-plugins-dependencies
+aegis_copilot/pubspec.lock
+
+# Node
+backend/node_modules/
+backend/package-lock.json
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Emergency app (separate project)
+emergency_app/.dart_tool/
+emergency_app/.packages
+emergency_app/build/
+emergency_app/.flutter-plugins
+emergency_app/.flutter-plugins-dependencies
+emergency_app/pubspec.lock
+
+# Gemini agent
+.gemini/

@@ -1,0 +1,14 @@
+runtime: python311
+service: default
+
+handlers:
+# Match specific files first
+- url: /(.*)
+  static_files: build/web/\1
+  upload: build/web/(.*)
+  require_matching_file: True
+
+# Fallback all other routes to index.html to support Flutter Web routing
+- url: /.*
+  static_files: build/web/index.html
+  upload: build/web/index.html
